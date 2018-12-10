@@ -156,7 +156,7 @@ svg:not(:root).svg-inline--fa {
     }
 
     .fa-layers-counter {
-        background-color: #ff253a;
+        background-color: #c52a30;
         border-radius: 1em;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -446,21 +446,4 @@ svg:not(:root).svg-inline--fa {
         overflow: visible;
         position: static;
         width: auto
-    }
-
-    .button {
-        color: #ffffff;
-        background-color: #c52a30;
-        border: none;
-        padding: 12px 37px;
-        text-align: center;
-        border-radius: 1em;
-        cursor: pointer;
-        -webkit-transition-duration: 0.1s;
-        transition-duration: 0.1s;
-
-    }
-        .button:hover {
-            color: #ffffff;
-            background-color: #921F24;
     }
