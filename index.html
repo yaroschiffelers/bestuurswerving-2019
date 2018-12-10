@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Landelijke Studentenvakbond</title>
     <meta name="description" content="Bestuurservaring opdoen en je inzetten voor de kwaliteit van het hoger onderwijs? Dan is een bestuursjaar bij de LSVb iets voor jou!">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/froala/design-blocks@master/dist/css/froala_blocks.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_style.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -22,6 +24,13 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+    <div class="alert alert-secondary alert-dismissible fade show cookie-warning-lsvb nothanks" id="js-cookie-warning" role="alert" data-dismiss="modal">
+        <div class="cookie-warning-lsvb-text text-center">De Landelijke Studentenvakbond gebruikt <a href="https://lsvb.nl/privacyverklaring-avg/" target="_blank">functionele, analytische en tracking cookies</a>.<br>Je geeft, door gebruik te blijven maken van deze website aan akkoord te gaan met het gebruik van cookies op deze website.
+        </div>
+            <button type="button nothanks" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+            </div>
     <header data-block-type="headers" data-id="3" class="">
         <div class="container">
             <nav class="navbar navbar-expand-md no-gutters">
@@ -33,41 +42,45 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center col-md-8" id="navbarNav4">
                     <ul class="navbar-nav justify-content-center">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#" contenteditable="false" style="outline: none; display: inline-block;">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#overons-id" contenteditable="false" style="outline: none; display: inline-block;">Over ons</a>
+                            <a class="nav-link" href="#overons-id" contenteditable="false" style="outline: none; display: inline-block;">Over de LSVb</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#organisatie-id" contenteditable="false" style="outline: none; display: inline-block;">Een bestuursjaar</a>
+                            <a class="nav-link" href="#organisatie-id" contenteditable="false" style="outline: none; display: inline-block;">Het bestuursjaar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.lsvb.nl/solliciteren" contenteditable="false" style="outline: none; display: inline-block;">Solliciteer nu</a>
+                            <a class="nav-link" href="#solliciteren-id" contenteditable="false" style="outline: none; display: inline-block;">Solliciteren</a>
                         </li>
                     </ul>
                 </div>
                 <ul class="navbar-nav col-2 justify-content-end d-none d-md-flex">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.froala.com" contenteditable="true" style="outline: none; display: inline-block;"><svg class="svg-inline--fa fa-facebook fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg><!-- <i class="fab fa-facebook"></i> --></a>
+                        <a class="nav-link" href="https://www.facebook.com/studentenbond" contenteditable="true" style="outline: none; display: inline-block;"><svg class="svg-inline--fa fa-facebook fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg><!-- <i class="fab fa-facebook"></i> --></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.froala.com" contenteditable="true" style="outline: none; display: inline-block;"><svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter"></i> --></a>
+                        <a class="nav-link" href="https://www.twitter.com/studentenbond" contenteditable="true" style="outline: none; display: inline-block;"><svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <i class="fab fa-twitter"></i> --></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/lsvb.studentenbond" contenteditable="true" style="outline: none; display: inline-block;"><svg class="svg-inline--fa fa-instagram fa-w-14" aria-hidden="true" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z"></path></svg><!-- DIT MOET INSTAGRAM WORDEN --></a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="fdb-block bg-dark" data-block-type="forms" data-id="14" draggable="true" id="home-id">
+    <section class="fdb-block" style="background-image: url(./imgs/achtergrond.jpg)" data-block-type="forms" data-id="14" draggable="true" id="home-id">
         <div class="container align-items-center text-center">
             <div class="row justify-content-center text-center">
                 <div class="col-12 col-md-10 col-lg-8" style="z-index: 10000;">
-                    <h1>Kom besturen bij de LSVb</h1>
+                    <h1>Besturen bij de LSVb?</h1>
                         <p class="lead">Wij zijn op zoek naar enthousiaste studenten die het hoger onderwijs willen verbeteren!</p>
-                        <div class="input-group mt-4 mb-4"><input type="text" class="form-control" placeholder="Blijf op de hoogte! Laat hier je e-mailadres achter" value="">
+                        <div class="input-group mt-4 mb-4"><input type="text" class="form-control" placeholder="Blijf op de hoogte! Laat je e-mailadres achter" value="">
                             <div class="input-group-append"><button class="btn btn-primary" type="button">Aanmelden</button></div>
                         </div>
                         <p class="h5"><em>*Je e-mailadres is veilig. We delen je e-mailadres nooit met anderen en je kunt je altijd afmelden.</em></p>
+                        <div><a href="https://lsvb.nl/solliciteren/" target="_blank"><button class="button">Solliciteer nu!</button></a>
                 </div>
             </div>
         </div>
@@ -77,6 +90,7 @@
             <div class="row">
                 <div class="col text-center" style="z-index: 10000;">
                         <h1>Wij zijn de Landelijke Studentenvakbond 👋</h1>
+                        </br>
                     </div>
                 </div>
                 <div class="row">
@@ -84,7 +98,7 @@
                     <p class="lead">Misschien ken je ons van het nieuws. Of heb je ons een keer gebeld met een vraag over jouw onderwijs. Onze missie is om jouw studententijd zo goed mogelijk te maken. Dat betekent dat wij ons elke dag inzetten voor toegankelijk onderwijs voor iedereen. Bijvoorbeeld door met de Tweede Kamer te praten over een eerlijke verdeling van studiekosten, maar ook door aandacht te vragen voor de hoge kamerhuur in studentensteden.</p>
                     <p class="lead"><strong> Voor het collegejaar 2019-2020 zoeken wij vijf bestuursleden die één jaar fulltime willen meewerken in het hart van het studentenleven.</strong></p>
                     <p class="lead">Wil jij bestuurservaring opdoen, je inzetten voor de kwaliteit van hoger onderwijs en de positie van de student? Dan is de LSVb iets voor jou!</p>
-                    <p class="lead"><em>Heb je vragen over een bestuursjaar bij de LSVb? Mail dan naar <a href="mailto:besturen@lsvb.nl">besturen@lsvb.nl</a>.</em></p>
+                    <p class="lead"><em>Heb je vragen over een bestuursjaar bij de LSVb? Of wil je met één van de huidige bestuursleden praten? Mail dan naar <a href="mailto:besturen@lsvb.nl">besturen@lsvb.nl</a>.</em></p>
                 </div>
             </div>
         </div>
@@ -95,50 +109,39 @@
             <div class="row">
                 <div class="col-sm-3 text-left">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-0" src="./imgs/carline.jpg">
+                        <a href="mailto:carline@lsvb.nl"><img alt="image" class="img-fluid rounded-0" src="./imgs/carline.jpg">
                         <div class="content p-3">
                             <h3><strong>Carline van Breugel</strong></h3>
-                            <p>Voorzitter</p>
+                            <p>Voorzitter</p></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3 text-left">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-0" src="./imgs/john.jpg">
+                         <a href="mailto:john@lsvb.nl"><img alt="image" class="img-fluid rounded-0" src="./imgs/john.jpg">
                         <div class="content p-3">
                             <h3><strong>John van Harten</strong></h3>
-                            <p>Vice-voorzitteer</p>
+                            <p>Vice-voorzitteer</p></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3 text-left">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-0" src="./imgs/annejet.jpg">
+                        <a href="mailto:annejet@lsvb.nl"><img alt="image" class="img-fluid rounded-0" src="./imgs/annejet.jpg">
                         <div class="content p-3">
                             <h3><strong>Annejet Lont</strong></h3>
-                            <p>Secretaris</p>
+                            <p>Secretaris</p></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3 text-left">
                     <div class="fdb-box p-0">
-                        <img alt="image" class="img-fluid rounded-0" src="./imgs/maarten.jpg">
+                        <a href="mailto:maarten@lsvb.nl"><img alt="image" class="img-fluid rounded-0" src="./imgs/maarten.jpg">
                         <div class="content p-3">
                             <h3><strong>Maarten Heinemann</strong></h3>
-                            <p>Penningmeester</p>
+                            <p>Penningmeester</p></a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Achtergrond afbeelding zonder tekst -->
-    <section class="fdb-block" data-block-type="contents" data-id="15" draggable="true">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-10" style="z-index: 10000;">
-                    <p><img alt="image" class="img-fluid" src="./imgs/actie_schuldenstelsel.jpg"></p>
                 </div>
             </div>
         </div>
@@ -172,7 +175,15 @@
                 </div>
             </div>
         </div>
+    </section>    <!-- Achtergrond afbeelding zonder tekst -->
+            <div class="row justify-content-center">
+                <div class="col-8" style="z-index: 10000;">
+                    <p><img alt="image" class="img-fluid" src="./imgs/actie_schuldenstelsel.jpg"></p>
+                </div>
+            </div>
+        </div>
     </section>
+
     <section>
         <div class="row justify-content-center">
                 <div class="col-8" style="z-index: 10000;">
@@ -210,11 +221,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Achtergrond afbeelding zonder tekst -->
-    <section class="fdb-block" data-block-type="contents" data-id="15" draggable="true">
-        <div class="container">
-            <div class="row justify-content-center">
+           <div class="row justify-content-center">
                 <div class="col-8" style="z-index: 10000;">
                     <p><img alt="image" class="img-fluid" src="./imgs/medewerkers.jpg"></p>
                 </div>
@@ -227,7 +234,7 @@
             <div class="row">
                 <div class="col text-center fr-box" role="application" style="z-index: 10000;">
                     <div class="fr-wrapper" dir="auto">
-                        <div class="fr-element fr-view" dir="auto" contenteditable="true" aria-disabled="false" spellcheck="true"><h1>De LSVb-organisatie</h1>
+                        <div class="fr-element fr-view" dir="auto" contenteditable="true" aria-disabled="false" spellcheck="true"><h1>Een bestuursjaar bij de LSVb</h1>
                             <div class="row text-justify pt-4">
                                 <div class="col-12 col-md-6" style="z-index: 10000;">
                                     <p class="lead"><h3>Lokaal en (inter)nationaal</h3></p>
@@ -316,7 +323,7 @@
             </div>
         </div>
     </section>
-    <section class="fdb-block" style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//shapes/9.svg);" data-block-type="testimonials" data-id="24" draggable="true">
+    <section class="fdb-block";" data-block-type="testimonials" data-id="24" draggable="true">
         <div class="container">
             <div class="row text-center justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7" style="z-index: 10000;"><h1>Klein team, grote impact</h1>
@@ -372,13 +379,16 @@
                         </div>
                     </div>
     </section>
-    <section class="fdb-block py-0" data-block-type="call_to_action" data-id="33" draggable="true">
-        <div class="container py-5 my-5 bg-r" style="background-image: url(https://cdn.jsdelivr.net/gh/froala/design-blocks@2.0.1/dist/imgs//shapes/4.svg);">
-            <div class="row justify-content-end py-5">
-                <div class="col-12 col-md-8 col-lg-6 mr-5 text-center" style="z-index: 10000;">
-                    <div class="fdb-box"><h1>Solliciteren?</h1>
-                        <p class="lead">Klik snel verder naar de sollicitatieprocedure.</p>
-                    </div>
+
+     <section class="fdb-block bg-dark" data-block-type="forms" data-id="14" draggable="true" id="solliciteren-id">
+        <div class="container align-items-center text-center">
+            <div class="row justify-content-center text-left">
+                <div class="col-12 col-md-10 col-lg-8" style="z-index: 10000;">
+                    <h1>Overtuigd?</h1>
+                        <p class="lead">Mail uiterlijk <u><b>vrijdag 1 februari 2018, 23:59 uur</b></u> jouw sollicitatiebrief (met motivatiebrief en CV) naar <b><a href="mailto:sollicitatiecommissie@lsvb.nl">sollicitatiecommissie@lsvb.nl</a>.</b></p> 
+                        <p class="lead">Het is goed om te weten dat je solliciteert voor een plek in het bestuur, niet voor een bepaalde functie.</br><i><a href="www.lsvb.nl/solliciteren"> >>Lees meer over de sollicitatieprocedure</a></i></p>
+                            <div class="input-group-append">
+                        </div>
                 </div>
             </div>
         </div>
