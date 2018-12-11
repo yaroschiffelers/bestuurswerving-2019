@@ -49,6 +49,18 @@ h4 {
 	text-rendering: optimizeLegibility;
 }
 
+h5 {
+	font-family: Montserrat,sans-serif;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	line-height: 1.5;
+	font-weight: 700;
+	text-align: left;
+	-webkit-font-smoothing: antialised;
+	text-rendering: optimizeLegibility;
+}
+
 h6 {
 	font-family: Montserrat,sans-serif;
 	font-size: 80%;
