@@ -1,3 +1,7 @@
+body {
+    width: 100vw;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat,sans-serif;
 }
@@ -113,10 +117,6 @@ a:hover {
     border-color: #c52a30;
 }
 
-/*header {
-    margin-bottom: 1rem;
-}*/
-
 section {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -124,4 +124,31 @@ section {
 
 footer {
     margin-top: 1rem;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #C52A30 !important;
+}
+
+.img-logo {
+    padding-top: 20px;
+    max-height: auto;
+    max-width: 15vw;
+}
+
+.container_team-cards {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-width: 200px !important;
+}
+
+@media (max-device-width : 760px) {
+    h1, h2, h3, h4, h5, h6, p, .lead {
+        padding: 0 10px 0 10px;
+    }
+
+    .img-logo {
+        max-height: auto !important;
+        max-width: 20vw !important;
+    }
 }
