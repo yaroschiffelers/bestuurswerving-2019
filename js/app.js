@@ -8,7 +8,7 @@
      * Add your Google Analytics API Key here.
      * @type {String}
      */
-    const GOOGLE_ANALYTICS_KEY = ''
+    const GOOGLE_ANALYTICS_KEY = 'UA-34936797-5'
 
     /**
      * Initialize Google Analytics.
